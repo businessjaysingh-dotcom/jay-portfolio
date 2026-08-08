@@ -205,7 +205,9 @@ pre u{color:var(--rust);text-decoration:none;}
 .hero .hw{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--dim);margin-top:9px;}
 @media (max-width:880px){
-  .hero{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:16px;}
+  /* 157px of text per line is unreadable — stack instead */
+  .hero{grid-template-columns:minmax(0,1fr);gap:16px;align-items:start;}
+  .hero .hp{width:132px;max-height:none;}
 }
 .sign{margin-top:22px;padding-top:16px;border-top:1px solid var(--line-soft);
   display:flex;gap:14px;align-items:center;}
