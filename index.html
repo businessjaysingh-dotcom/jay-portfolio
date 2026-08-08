@@ -39,9 +39,11 @@ body.clean .slate .cap,body.clean .deck{display:none;}
   min-width:0;min-height:0;}
 .who{display:flex;gap:12px;align-items:center;padding:15px 18px;
   border-bottom:1px solid var(--line-soft);background:var(--card);}
-.pic{width:40px;height:40px;border-radius:50%;flex:none;
+.pic{width:42px;height:42px;border-radius:50%;flex:none;overflow:hidden;
   background:linear-gradient(150deg,var(--me),#123f36);
-  display:grid;place-items:center;font-weight:800;font-size:16px;color:var(--me-txt);}
+  display:grid;place-items:center;font-weight:800;font-size:16px;color:var(--me-txt);
+  box-shadow:0 0 0 2px rgba(30,107,92,.5);}
+.pic img{width:100%;height:100%;object-fit:cover;display:block;}
 .who .nm{font-weight:700;font-size:15px;letter-spacing:-.01em;}
 .who .st{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.09em;margin-top:2px;}
 .thread{flex:1;min-height:0;padding:20px 18px;display:flex;flex-direction:column;gap:9px;
@@ -193,7 +195,10 @@ pre u{color:var(--rust);text-decoration:none;}
 .vslot .vd{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:8px;line-height:1.7;}
 .vslot code{color:var(--mid);}
 
-.sign{margin-top:22px;padding-top:16px;border-top:1px solid var(--line-soft);}
+.sign{margin-top:22px;padding-top:16px;border-top:1px solid var(--line-soft);
+  display:flex;gap:14px;align-items:center;}
+.sign .sgp{width:54px;height:54px;border-radius:50%;flex:none;object-fit:cover;
+  box-shadow:0 0 0 2px rgba(217,169,76,.35);}
 .sign .sg{font-size:19px;font-weight:800;letter-spacing:-.025em;}
 .sign .sgs{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:6px;line-height:1.8;}
 a.lk{color:var(--sand);text-decoration:none;border-bottom:1px solid rgba(217,169,76,.4);}
@@ -241,7 +246,7 @@ button.go:hover{filter:brightness(1.09);color:#1A1305;}
     <!-- ══════════ chat ══════════ -->
     <div class="chatcol">
       <div class="who">
-        <div class="pic">J</div>
+        <div class="pic"><img src="jay.jpg" alt="Jay" width="42" height="42"></div>
         <div>
           <div class="nm">Jay</div>
           <div class="st">Canada · building sales systems</div>
@@ -436,9 +441,12 @@ else:
           got this and I'll walk you through any part of it in detail.</p>
           <p class="cc"><a class="lk" href="conversations.html">▶ Three real conversations, decoded message by message</a></p>
           <div class="sign">
+            <img class="sgp" src="jay-sm.jpg" alt="Jay" width="54" height="54">
+            <div>
             <div class="sg">Jay</div>
             <div class="sgs">Canada · building sales systems<br>
             AtraxAi outreach engine · 34 modules · 10,883 lines · written solo</div>
+            </div>
           </div>
         </div>
 
