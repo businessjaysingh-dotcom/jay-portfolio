@@ -195,6 +195,17 @@ pre u{color:var(--rust);text-decoration:none;}
 .vslot .vd{font-family:var(--mono);font-size:10.5px;color:var(--dim);margin-top:8px;line-height:1.7;}
 .vslot code{color:var(--mid);}
 
+.hero{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);
+  gap:26px;align-items:center;}
+.hero .hp{width:100%;border-radius:8px;display:block;object-fit:cover;aspect-ratio:4/5;
+  box-shadow:0 10px 34px rgba(0,0,0,.5),0 0 0 1px rgba(217,169,76,.28);}
+.hero .hn{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1.05;}
+.hero .hn em{font-style:normal;color:var(--sand);}
+.hero .hw{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--dim);margin-top:9px;}
+@media (max-width:880px){
+  .hero{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:16px;}
+}
 .sign{margin-top:22px;padding-top:16px;border-top:1px solid var(--line-soft);
   display:flex;gap:14px;align-items:center;}
 .sign .sgp{width:54px;height:54px;border-radius:50%;flex:none;object-fit:cover;
@@ -261,11 +272,18 @@ button.go:hover{filter:brightness(1.09);color:#1A1305;}
       <div class="exbody">
 
         <div class="ex on" data-ex="intro">
-          <div class="exlab">What this is</div>
-          <div class="exh">Everything I say on the left, I can show on the right.</div>
-          <p class="exp">No claims without evidence. As the story moves, this panel fills with the
-          actual thing — the code, the numbers straight out of the logs, the file tree, the
-          conversations. <b>Nothing here is rounded up or invented.</b></p>
+          <div class="hero">
+            <img class="hp" src="jay-portrait.jpg" alt="Jay" width="520" height="650">
+            <div>
+              <div class="exlab">Hey, I'm</div>
+              <div class="hn">Jay<em>.</em></div>
+              <div class="hw">Canada · building sales systems</div>
+              <p class="exp" style="margin-top:15px">Everything I say on the left, I can show on
+              the right. As the story moves, this panel fills with the actual thing — the code, the
+              numbers straight out of the logs, the file tree, the real conversations.
+              <b>Nothing here is rounded up or invented.</b></p>
+            </div>
+          </div>
         </div>
 
         <div class="ex" data-ex="failures">
