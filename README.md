@@ -2,7 +2,9 @@
 
 I built a system that finds people, qualifies them, and runs the entire conversation itself — then I documented every decision it makes, including the ones it got wrong.
 
-**▶ [See it running](https://businessjaysingh-dotcom.github.io/jay-portfolio/)** — a short self-playing walkthrough. Press `P`.
+**▶ [Start here](https://businessjaysingh-dotcom.github.io/jay-portfolio/)** — the 60-second version.
+
+**▶ [The full walkthrough](https://businessjaysingh-dotcom.github.io/jay-portfolio/story.html)** — 3 minutes, plays itself. Press `P`.
 
 **▶ [Three real conversations, decoded](https://businessjaysingh-dotcom.github.io/jay-portfolio/conversations.html)** — replayed message by message, with the rule that fired on each reply shown beside it.
 
