@@ -197,7 +197,8 @@ pre u{color:var(--rust);text-decoration:none;}
 
 .hero{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);
   gap:26px;align-items:center;}
-.hero .hp{width:100%;border-radius:8px;display:block;object-fit:cover;aspect-ratio:4/5;
+.hero .hp{width:100%;height:auto;max-height:330px;border-radius:8px;display:block;
+  object-fit:cover;aspect-ratio:4/5;align-self:center;
   box-shadow:0 10px 34px rgba(0,0,0,.5),0 0 0 1px rgba(217,169,76,.28);}
 .hero .hn{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1.05;}
 .hero .hn em{font-style:normal;color:var(--sand);}
@@ -273,7 +274,7 @@ button.go:hover{filter:brightness(1.09);color:#1A1305;}
 
         <div class="ex on" data-ex="intro">
           <div class="hero">
-            <img class="hp" src="jay-portrait.jpg" alt="Jay" width="520" height="650">
+            <img class="hp" src="jay-portrait.jpg" alt="Jay">
             <div>
               <div class="exlab">Hey, I'm</div>
               <div class="hn">Jay<em>.</em></div>
