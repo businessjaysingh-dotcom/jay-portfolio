@@ -120,4 +120,9 @@ open index.html
 
 ---
 
+## Contact
+
 **Jay** · Canada · building sales systems
+
+- [businessjaysingh@gmail.com](mailto:businessjaysingh@gmail.com)
+- Instagram — [@jayycloses](https://instagram.com/jayycloses)
