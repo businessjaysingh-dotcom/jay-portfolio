@@ -1,0 +1,201 @@
+<title>Jay — Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  color-scheme:light;
+  --ink:#16181C; --soft:#4A4E56; --dim:#6E7279; --rule:#D9D6CE;
+  --acc:#8A6A1E; --paper:#FFFDF8;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:#E8E5DE;color:var(--ink);font-family:var(--sans);
+  line-height:1.46;-webkit-font-smoothing:antialiased;}
+.sheet{max-width:8.5in;margin:26px auto;background:var(--paper);padding:0.62in 0.66in 0.55in;
+  box-shadow:0 3px 22px rgba(0,0,0,.14);}
+a{color:var(--acc);text-decoration:none;}
+
+.hd{border-bottom:1.5px solid var(--ink);padding-bottom:10px;}
+h1{margin:0;font-size:27px;font-weight:800;letter-spacing:-.032em;line-height:1;}
+.role{margin:6px 0 0;font-family:var(--mono);font-size:10px;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--acc);font-weight:600;}
+.ct{margin:9px 0 0;font-size:11.5px;color:var(--soft);display:flex;flex-wrap:wrap;gap:7px;}
+.ct i{font-style:normal;color:var(--rule);}
+.tel{display:none;}
+
+.sum{margin:13px 0 0;font-size:12.5px;color:var(--soft);line-height:1.58;max-width:64ch;}
+.sum b{color:var(--ink);}
+
+h2{margin:20px 0 0;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);font-weight:700;
+  display:flex;align-items:center;gap:10px;}
+h2::after{content:"";height:1px;flex:1;background:var(--rule);}
+
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:9px;
+  border:1px solid var(--rule);}
+.kpi div{padding:9px 10px;border-right:1px solid var(--rule);}
+.kpi div:last-child{border-right:0;}
+.kpi b{display:block;font-family:var(--mono);font-size:16px;font-weight:700;color:var(--acc);
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+.kpi span{display:block;font-size:9.5px;color:var(--soft);margin-top:4px;line-height:1.35;}
+
+.job{margin-top:12px;break-inside:avoid;}
+.jh{display:flex;justify-content:space-between;align-items:baseline;gap:14px;}
+.jh h3{margin:0;font-size:13px;letter-spacing:-.014em;}
+.jh h3 em{font-style:normal;font-weight:500;color:var(--soft);}
+.jh .when{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;color:var(--dim);
+  white-space:nowrap;}
+.job ul{margin:5px 0 0;padding-left:15px;}
+.job li{font-size:11.5px;color:var(--soft);line-height:1.5;margin-top:2.5px;}
+.job li b{color:var(--ink);font-weight:600;}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:9px;}
+.two p{margin:0;font-size:11.5px;color:var(--soft);line-height:1.6;}
+.two p b{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--dim);margin-bottom:3px;}
+
+.edu{margin-top:9px;display:flex;justify-content:space-between;align-items:baseline;gap:14px;}
+.edu h3{margin:0;font-size:13px;letter-spacing:-.014em;}
+.edu p{margin:2px 0 0;font-size:11.5px;color:var(--soft);}
+.edu .when{font-family:var(--mono);font-size:9.5px;color:var(--dim);white-space:nowrap;}
+
+.note{max-width:8.5in;margin:0 auto 40px;padding:0 0.66in;font-family:var(--mono);
+  font-size:10.5px;color:#6E7279;line-height:1.6;}
+.note b{color:#16181C;}
+
+@media print{
+  @page{size:letter;margin:0.4in;}
+  html,body{background:#fff;}
+  .sheet{box-shadow:none;margin:0;max-width:none;padding:0;}
+  .sum{max-width:none;font-size:12px;line-height:1.4;margin-top:10px;}
+  h2{margin-top:10px;break-after:avoid;}
+  .job{margin-top:6px;}
+  .job ul{margin-top:3px;}
+  .job li{line-height:1.35;margin-top:2px;}
+  .kpi div{padding:7px 9px;}
+  .two p{line-height:1.4;}
+  .edu{break-inside:avoid;}
+  .note{display:none;}
+  .tel{display:inline;}
+  a{color:var(--ink);}
+}
+@media (max-width:680px){
+  .sheet{padding:26px 20px;margin:0;}
+  .kpi{grid-template-columns:repeat(2,1fr);}
+  .kpi div:nth-child(2){border-right:0;}
+  .two{grid-template-columns:1fr;gap:12px;}
+  .jh{flex-direction:column;gap:2px;}
+}
+</style>
+
+<div class="sheet">
+
+  <div class="hd">
+    <h1>Jay</h1>
+    <p class="role">Sales &middot; Brand Acquisition &amp; Appointment Setting</p>
+    <!-- Phone shows on the printed PDF only, not on the public web page. -->
+    <div class="ct">
+      <span>Toronto · Sales experience across agencies and service businesses</span><i>&middot;</i>
+      <a href="mailto:businessjaysingh@gmail.com">businessjaysingh@gmail.com</a><i>&middot;</i>
+      <a href="https://www.linkedin.com/in/jayyy/">linkedin.com/in/jayyy</a><i>&middot;</i>
+      <span class="tel">+1 437-829-2509<i>&middot;</i></span>
+      <a href="https://businessjaysingh-dotcom.github.io/jay-portfolio/">Portfolio</a>
+    </div>
+  </div>
+
+  <p class="sum">I personally closed $100K in brand acquisition at EVO Marketing. My experience includes prospect research, qualification, sales conversations and follow-up. In a separate client project, I applied that sales knowledge to automated outreach to save time on repetitive messaging.</p>
+
+  <h2>Selected results</h2>
+  <div class="kpi">
+    <div><b>$100K</b><span>personally closed in brand acquisition at EVO Marketing</span></div>
+    <div><b>44.4%</b><span>conversation rate in the automated outreach project: 99 of 223 cold contacts</span></div>
+    <div><b>113</b><span>automated conversations across all channels</span></div>
+    <div><b>393</b><span>automated opening messages to 223 cold contacts</span></div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="jh"><h3>Outbound Setter <em>&mdash; Theory Labs, Toronto</em></h3>
+      <span class="when">2026 &mdash; Present</span></div>
+    <ul>
+      <li>Run cold outreach for an AI video studio selling to SaaS, crypto and funded startups, targeting <b>20&ndash;30 personalized messages a day</b> across Instagram, X and email.</li>
+      <li>Research every account before contact and write the opener plus a seven-touch follow-up cadence, so no lead sits more than three days without a next touch.</li>
+      <li>Own CRM accuracy end to end &mdash; stage hygiene, reply handling, and the weekly pipeline report to the founder.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="jh"><h3>Brand Acquisition &amp; Sales <em>&mdash; EVO Marketing</em></h3>
+      <span class="when">Mar 2025 &mdash; Present</span></div>
+    <ul>
+      <li>Personally closed <b>$100K in brand acquisition</b> at EVO Marketing, alongside outreach, qualification and follow-up.</li>
+      <li>Built the lead-filtering criteria that kept unqualified prospects off closers' calendars.</li>
+      <li>A/B tested outreach scripts weekly against live booking data rather than opinion.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="jh"><h3>Client project <em>&mdash; AtraxAi</em></h3>
+      <span class="when">2026</span></div>
+    <ul>
+      <li>Applied my sales knowledge to automate repetitive outreach and replies for a client. Reviewed conversations to improve qualification and recognize when a prospect was ready for the next step.</li>
+      
+      
+    </ul>
+  </div>
+
+  <!-- Decided 2026-09-11: client stays unnamed at Jay's request. Describe the business, never the name. -->
+  <div class="job">
+    <div class="jh"><h3>Business Development <em>&mdash; GTA luxury real-estate brokerage (client)</em></h3>
+      <span class="when">2026</span></div>
+    <ul>
+      <li>Supported a client’s business-development work with creative approaches to prospect research and outreach.</li>
+      <li>Targeted referral fees, co-listings and pocket listings across Toronto, Mississauga, Oakville and Vaughan.</li>
+    </ul>
+  </div>
+
+  <!-- NEEDS JAY: the window cleaning business's real name. Previous resumes said
+       "HVAC Business" — that was incorrect and has been fixed. -->
+  <div class="job">
+    <div class="jh"><h3>Appointment Setter <em>&mdash; Window cleaning business</em></h3>
+      <span class="when">Jan &mdash; Mar 2025</span></div>
+    <ul>
+      <li>Booked service and installation appointments through low-pressure outbound to homeowners for a creator-run service business.</li>
+      <li>Recovered dormant leads with structured follow-up sequences to keep the pipeline full.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="jh"><h3>Business Development &amp; Deal Facilitation <em>&mdash; Independent clients</em></h3>
+      <span class="when">Jan 2025 &mdash; Present</span></div>
+    <ul>
+      <li>Ran full deal cycles solo, first contact to signed agreement, mediating between businesses and service providers across several niches.</li>
+      <li>Built trust with senior decision-makers through direct, consistent follow-through.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="jh"><h3>Barista &amp; Customer Service <em>&mdash; Starbucks, Toronto</em></h3>
+      <span class="when">2024 &mdash; Present</span></div>
+    <ul>
+      <li>High-volume service with accuracy under rush conditions; POS and cash handling; supported onboarding for new partners.</li>
+    </ul>
+  </div>
+
+  <h2>Skills &amp; tools</h2>
+  <div class="two">
+    <p><b>Sales</b>Cold outreach (Instagram DM, X DM, Telegram, email) &middot; Cold calling &middot; Lead qualification &middot; Objection handling &middot; Follow-up cadence design &middot; Pipeline management &middot; Conversational selling</p>
+    <p><b>Approach</b>Prospect research &middot; Personalized outreach &middot; Qualification &middot; Follow-up &middot; Creative problem-solving</p>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <div><h3>BCom (Hons), International Management &amp; Technology</h3>
+      <p>International Business University, Toronto</p></div>
+    <span class="when">Expected 2028</span>
+  </div>
+
+</div>
+
+<p class="note"><b>To export:</b> Cmd&nbsp;+&nbsp;P &rarr; Destination &ldquo;Save as PDF&rdquo; &rarr; uncheck Headers and footers. Your phone number is hidden on this web page and appears only in the printed PDF. This note doesn't print.</p>
